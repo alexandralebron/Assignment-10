@@ -24,7 +24,7 @@ import requests
 
 
 urlUnemployment = "https://www.bls.gov/web/laus/laumstrk.htm"
-response = requests.get(urlUnemployment)
+response = requests.get(urlUnemployment, timeout=60)
 
 
 # In[4]:
